@@ -7059,19 +7059,23 @@ Media Query
 
 .darkMode .card button {
     /* border: 1px solid white;  */
-    /* background: grey;  */
+    background: none;
     outline: none;
     border: 1px solid gray;
-  
 }
 
 .darkMode .card button:hover {
-    /* border: 1px solid white;  */
-    /* background: grey;  */
-    /* outline: 1px solid white; */
     border: 1px solid gray;
-    background: #5969ff;
-  
+    background: black;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.darkMode .card button:active {
+    border: 1px solid gray;
+    background: black;
+    outline: none;
+    -webkit-appearance: none;
 }
 
 .darkMode input {
@@ -7082,11 +7086,6 @@ Media Query
     color: #d4d4d4 !important;
 }
 
-.darkMode .card a {
-    /* border: 1px solid white;  */
-    background: #5969ff !important;
-}
-
 .darkMode .tox-toolbar * {
     background-color:  #242424;
 }
@@ -7095,31 +7094,47 @@ Media Query
     background-color: #242424;
 }
 
-.darkMode .tox-icon * {
-    background-color: #242424; 
+.darkMode .tox :not(svg):not(rect) {
+    fill: white;
 }
-
-.darMode .tox-toolbar-overlord {
-    background-color: #242424;
-}
-
 
 .darkMode .tox-icon svg path {
     fill: white;
 }
 
-.darkMode .tox-toolbar__group {
+.darkMode .tox .tox-split-button .tox-tbtn {
     background-color: #242424;
+}
+
+.darkMode .tox:not([dir=rtl]) .tox-toolbar__group:not(:last-of-type) {
+    background-color: #242424;
+}
+.darkMode .tox .tox-edit-area__iframe {
+    background: #bbbbbb;
 }
 
 .darkMode .tox .tox-statusbar * {
     padding: 2px !important;
 }
 
+.darkMode button.tox-tbtn {
+    border: none;
+}
+
+.darkMode .tox-toolbar__group button {
+    color: none;
+    outline: none;
+    background: none;
+}
+
 .darkMode .tox-toolbar__group button:hover {
     color: none;
     outline: none;
-    background: rgb(196, 192, 192);
+    background: none;
+}
+
+.darkMode .tox-editor-container .tox-toolbar__primary {
+    background-image: none;
 }
 
 

@@ -15,6 +15,7 @@ import PrivateRoute from './Components/PrivateRoute';
 import GuestRoute from './Components/GuestRoute';
 import {CustomProvider} from './Components/CustomProvider';
 import {MyContext} from './Components/CustomProvider';
+import './Custom.css';
 
 class App extends Component {
 	constructor(props) {

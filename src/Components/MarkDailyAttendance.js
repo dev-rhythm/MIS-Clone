@@ -32,7 +32,7 @@ class MarkDailyAttendance extends Component {
                                                 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                             </div>
                                             <div className="form-group">
-                                                <button type="button" className="form-control btn btn-mini btn-primary">Submit</button>
+                                                <button type="button" className="btn btn-primary">Submit</button>
                                             </div>
                                         </form>
                                     </div>
