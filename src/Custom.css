@@ -151,12 +151,17 @@ footer.darkMode  {
 }
 
 footer.darkMode h5 * {
-    color: gray !important;
+    color: #f8996d !important;
+    
 }
 
-footer.darkMode a * {
+footer.darkMode a:hover {
     /* background: black; */
-    color: #007bff !important;
+    color: #fc8f5d !important;
+} 
+
+.darkMode .input-checkbox  {
+    border: none !important;
 }
 
 

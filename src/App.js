@@ -11,6 +11,8 @@ import DailyWorkingReport from './Components/DailyWorkingReport';
 import LeaveManagement from './Components/LeaveManagement';
 import MarkDailyAttendance from './Components/MarkDailyAttendance';
 import ResetPassword from './Components/ResetPassword';
+
+import ScrollToTop from './Components/ScrollToTop';
 import PrivateRoute from './Components/PrivateRoute';
 import GuestRoute from './Components/GuestRoute';
 import {CustomProvider} from './Components/CustomProvider';
@@ -18,6 +20,7 @@ import {MyContext} from './Components/CustomProvider';
 import './Custom.css';
 
 class App extends Component {
+	
 	render(){
 		const darkModeStyle = {
 			backgroundColor: '#080808',
@@ -31,23 +34,28 @@ class App extends Component {
 			<>
 			<CustomProvider>
 				<BrowserRouter>
+				
 					<Header/>
 					<SideNav/>
-					<Switch>
-						<GuestRoute exact path='/' component={Login} />
-						<GuestRoute path='/forgot-password' component={ForgotPassword} />
-					</Switch>
+					<ScrollToTop>
+						<Switch>
+							<GuestRoute exact path='/' component={Login} />
+							<GuestRoute path='/forgot-password' component={ForgotPassword} />
+						</Switch>
+					</ScrollToTop>
 						<MyContext.Consumer>
 								{(context) => 
 									<div className="dashboard-wrapper" style={context.state.authenticated && context.state.darkMode ? darkModeStyle : lightModeStyle}>
 												<div className="container-fluid dashboard-content">
-													<Switch>
-														<PrivateRoute path='/dashboard' component={Dashboard} />
-														<PrivateRoute path='/working-report' component={DailyWorkingReport} />
-														<PrivateRoute path='/leave-management' component={LeaveManagement} />
-														<PrivateRoute path='/daily-attendance' component={MarkDailyAttendance} />
-														<PrivateRoute path='/reset-password' component={ResetPassword} />
-													</Switch>
+													<ScrollToTop>
+														<Switch>
+															<PrivateRoute path='/dashboard' component={Dashboard} />
+															<PrivateRoute path='/working-report' component={DailyWorkingReport} />
+															<PrivateRoute path='/leave-management' component={LeaveManagement} />
+															<PrivateRoute path='/daily-attendance' component={MarkDailyAttendance} />
+															<PrivateRoute path='/reset-password' component={ResetPassword} />
+														</Switch>
+													</ScrollToTop>
 												</div>
 										<Footer/>
 									</div>
