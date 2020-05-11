@@ -220,7 +220,7 @@ class DailyWorkingReport extends Component {
                                         <div className="row comment-container">
                                             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 my-3">
                                                 <h3 className="mb-4">Additional Comment</h3>
-                                                <Editor
+                                                {/* <Editor
                                                     apiKey="5clo0u53bwwin3biqxq0z2friwcxpgjyq6hp291hivqwgumm"
                                                     initialValue="<p>This is the initial content of the editor</p>"
                                                     init={{
@@ -230,7 +230,7 @@ class DailyWorkingReport extends Component {
                                                     toolbar:'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help'
                                                     }}
                                                     onEditorChange={() => this.handleEditorChange}
-                                                />
+                                                /> */}
                                             </div>
                                         </div>
                                         <div className="row">

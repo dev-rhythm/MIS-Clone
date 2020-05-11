@@ -7050,38 +7050,43 @@ Media Query
 }
 
 .darkMode .card  {
-    border: 1px solid #4a4a4a;
-}
-
-.darkMode .card  {
-    border: 1px solid #4a4a4a;
-}
-
-.darkMode .card button {
-    /* border: 1px solid white;  */
-    background: none;
-    outline: none;
-    border: 1px solid gray;
-}
-
-.darkMode .card button:hover {
-    border: 1px solid gray;
-    background: black;
-    outline: none;
-    -webkit-appearance: none;
-}
-
-.darkMode .card button:active {
-    border: 1px solid gray;
-    background: black;
-    outline: none;
-    -webkit-appearance: none;
-}
-
-
-
-.darkMode input {
     border: 1px solid #9a9a9a;
+}
+
+.darkMode .card .btn-primary {
+    background: black;
+    outline: none !important;
+    border: 1px solid gray !important;
+    box-shadow: none !important;
+    cursor: pointer !important;
+}
+
+.darkMode .card .btn-primary:hover {
+    border: 1px solid white;
+    background: rgb(22, 22, 22) !important;
+    outline: none !important;
+    -webkit-appearance: none !important;
+    cursor: pointer !important;
+}
+
+.darkMode .card .btn-primary:active {
+    border: 1px solid white !important;
+    outline: none !important;
+    -webkit-appearance: none !important;
+    box-shadow:none !important;
+} 
+
+.darkMode .btn-primary:focus {
+    background: rgb(22, 22, 22) !important;
+    box-shadow:none !important;
+}
+
+.darkMode input, .darkMode textarea {
+    border: 1px solid #9a9a9a;
+}
+
+.darkMode .table-responsive * {
+    border: 1px solid #9a9a9a !important;
 }
 
 .darkMode ::placeholder {

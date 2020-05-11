@@ -11,7 +11,199 @@
 }
 
 .form-control {
-
     color: #242849;
     font-size: 15px;
 }
+
+/*---------------Dark Mode CSS----------------*/
+
+.darkMode h1 *, 
+.darkMode h2 *, 
+.darkMode h3 *,
+.darkMode h4 *,
+.darkMode h5 *,
+.darkMode h6 *,
+.darkMode p *,
+.darkMode a, 
+.darkMode a *, 
+.darkMode span *
+.darkMode i *,
+.darkMode div *,
+.darkMode .card *,
+.darkMode form *,
+.darkMode footer *
+{
+    color: white !important;
+}
+
+.darkMode .card *  {
+    background-color: #242424;
+}
+
+.darkMode .card  {
+    border: 1px solid #9a9a9a;
+}
+
+.darkMode .card .btn-primary {
+    background: black;
+    outline: none !important;
+    border: 1px solid gray !important;
+    box-shadow: none !important;
+    cursor: pointer !important;
+}
+
+.darkMode .card .btn-primary:hover {
+    border: 1px solid white;
+    background: rgb(22, 22, 22) !important;
+    outline: none !important;
+    -webkit-appearance: none !important;
+    cursor: pointer !important;
+}
+
+.darkMode .card .btn-primary:active {
+    border: 1px solid white !important;
+    outline: none !important;
+    -webkit-appearance: none !important;
+    box-shadow:none !important;
+} 
+
+.darkMode .btn-primary:focus {
+    background: black !important;
+    box-shadow:none !important;
+}
+
+.darkMode input, .darkMode textarea {
+    border: 1px solid #7a7a7a;
+}
+
+.darkMode input:focus, .darkMode textarea:focus {
+    box-shadow: none !important;
+    border: 1px solid white !important;
+}
+
+.darkMode .table-responsive * {
+    border: 1px solid #7a7a7a !important;
+    box-shadow: none !important;
+}
+
+.darkMode .table-responsive select:focus {
+    box-shadow: none !important;
+    border: 1px solid white !important;
+}
+
+.darkMode ::placeholder {
+    color: #d4d4d4 !important;
+}
+
+.darkMode .tox-toolbar * {
+    background-color:  #242424;
+}
+  
+.darkMode .tox-editor-container .tox-toolbar__primary  {
+    background-color: #242424;
+}
+
+.darkMode .tox :not(svg):not(rect) {
+    fill: white;
+}
+
+.darkMode .tox-icon svg path {
+    fill: white;
+}
+
+.darkMode .tox .tox-split-button .tox-tbtn {
+    background-color: #242424;
+}
+
+.darkMode .tox:not([dir=rtl]) .tox-toolbar__group:not(:last-of-type) {
+    background-color: #242424;
+}
+.darkMode .tox .tox-edit-area__iframe {
+    background: #bbbbbb;
+}
+
+.darkMode .tox .tox-statusbar * {
+    padding: 2px !important;
+}
+
+.darkMode button.tox-tbtn {
+    border: none;
+}
+
+.darkMode .tox-toolbar__group button {
+    color: none;
+    outline: none;
+    background: none;
+}
+
+.darkMode .tox-toolbar__group button:hover {
+    color: none;
+    outline: none;
+    background: none;
+}
+
+.darkMode .tox-editor-container .tox-toolbar__primary {
+    background-image: none;
+}
+
+footer.darkMode  {
+    background: black;
+}
+
+footer.darkMode h5 * {
+    color: gray !important;
+}
+
+footer.darkMode a * {
+    /* background: black; */
+    color: #007bff !important;
+}
+
+
+/*--------------- CSS for Modern Scrollcar----------------- */
+
+body::-webkit-scrollbar {
+    width: 12px;                        /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: white;                  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #3d405c;          /* color of the scroll thumb */
+    border-radius: 20px;                /* roundness of the scroll thumb */
+    border: 3px solid white;            /* creates padding around scroll thumb */
+}
+
+.table::-webkit-scrollbar {
+    width: 12px;                        /* width of the entire scrollbar */
+}
+
+.table::-webkit-scrollbar-track {
+    background: white;                  /* color of the tracking area */
+}
+
+.table::-webkit-scrollbar-thumb {
+    background-color: #3d405c;           /* color of the scroll thumb */
+    border-radius: 20px;                 /* roundness of the scroll thumb */
+    border: 3px solid white;             /* creates padding around scroll thumb */
+}
+
+.report-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;                        /* width of the entire scrollbar */
+}
+
+.report-container::-webkit-scrollbar-track {
+    background: white;                  /* color of the tracking area */
+}
+
+.report-container::-webkit-scrollbar-thumb {
+    background-color: #acadba;          /* color of the scroll thumb */
+    border-radius: 20px;                /* roundness of the scroll thumb */
+    border: none                        /* creates padding around scroll thumb */
+}
+
+
+
