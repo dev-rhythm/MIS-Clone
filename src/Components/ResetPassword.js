@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import {} from 'react-router-dom';
 import {MyContext} from './CustomProvider';
 
 class ResetPassword extends Component {

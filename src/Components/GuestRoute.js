@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter, Route, Redirect} from "react-router-dom";
+import {Route, Redirect} from "react-router-dom";
 import {MyContext} from './CustomProvider';
 
 function GuestRoute ({component: Component, ...rest}) {

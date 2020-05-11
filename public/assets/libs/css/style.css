@@ -7078,6 +7078,8 @@ Media Query
     -webkit-appearance: none;
 }
 
+
+
 .darkMode input {
     border: 1px solid #9a9a9a;
 }
@@ -7137,6 +7139,19 @@ Media Query
     background-image: none;
 }
 
+footer.darkMode  {
+    background: black;
+}
+
+footer.darkMode h5 * {
+    color: gray !important;
+}
+
+footer.darkMode a * {
+    /* background: black; */
+    color: #007bff !important;
+}
+
 
 /*--------------- CSS for Modern Scrollcar----------------- */
 
@@ -7182,3 +7197,4 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;                /* roundness of the scroll thumb */
     border: none                        /* creates padding around scroll thumb */
 }
+

@@ -8,7 +8,7 @@ class Footer extends Component {
             <MyContext.Consumer>
 				{(context) => 
 					context.state.authenticated ?  
-                        <div className="footer">
+                        <footer className={context.state.darkMode ? 'footer darkMode' : 'footer'}>
                             <div className="container-fluid">
                                 <div className="row">
                                     <div className="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12">
@@ -24,7 +24,7 @@ class Footer extends Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </footer>
                     : null 
                 }
             </MyContext.Consumer>

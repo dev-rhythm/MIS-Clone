@@ -3,12 +3,10 @@ import { Link, NavLink } from 'react-router-dom'
 import {MyContext} from './CustomProvider'
 
 class Header extends Component {
-	constructor(props) {
-		super(props)
-	}
     render() {
 		const headerDarkMode = {
-			background: "black"
+			background: "black",
+			borderBottom: '1px solid #3a3a3a'
 		}
 
 		const headerLightMode = {

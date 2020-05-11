@@ -7,7 +7,7 @@ class MarkDailyAttendance extends Component {
             <>  
                 <MyContext.Consumer>
                     {(context) =>
-                        <div className="row" className={context.state.darkMode ? 'darkMode' : ''}>
+                        <div className={context.state.darkMode ? 'row darkMode' : 'row'}>
                             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div className="page-header">
                                     <h2 className="pageheader-title"><i className="fas fa-id-badge mx-2"></i>Mark Daily Attendance</h2>

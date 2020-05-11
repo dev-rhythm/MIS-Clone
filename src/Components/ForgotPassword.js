@@ -26,7 +26,7 @@ export class ForgotPassword extends Component {
                                             <input className="form-control form-control-lg" type="email" name="email" required="" placeholder="Your Email" autoComplete="off"/>
                                         </div>
                                         <div className="form-group pt-1">
-                                            <input type="button" className="form-control btn btn-block btn-primary btn-xl" value="Reset Password"/>
+                                            <input type="button" className="btn btn-block btn-primary btn-xl" value="Reset Password"/>
                                         </div>
                                     </form>
                                 </div>

@@ -57,16 +57,6 @@ class DailyWorkingReport extends Component {
             width: '2400px',
         }
 
-        const timePickerStyle = {
-            padding: '6px',
-            borderRadius: '1px',
-            boxShadow: 'none',
-            textShadow: 'none',
-            border: '1px solid #d2d2e4',
-            outline: 'none',
-            width: '100%',
-        }
-
         let newRow = this.state.tableRows.map((item, index) => {
             return (
                 <tr id={"row_"+(index+1)}>
@@ -152,7 +142,7 @@ class DailyWorkingReport extends Component {
             <>  
                 <MyContext.Consumer>
                     {(context) => 
-                        <div className="row" className={context.state.darkMode ? 'darkMode' : ''}>
+                        <div className={context.state.darkMode ? 'row darkMode' : 'row'}>
                             <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div className="page-header">
                                     <h2 className="pageheader-title"><i className="fas fa-tasks mx-2"></i>Daily Working Report</h2>
@@ -236,15 +226,8 @@ class DailyWorkingReport extends Component {
                                                     init={{
                                                     height: 300,
                                                     menubar: false,
-                                                    plugins: [
-                                                        'advlist autolink lists link image charmap print preview anchor',
-                                                        'searchreplace visualblocks code fullscreen',
-                                                        'insertdatetime media table paste code help wordcount'
-                                                    ],
-                                                    toolbar:
-                                                        'undo redo | formatselect | bold italic backcolor | \
-                                                        alignleft aligncenter alignright alignjustify | \
-                                                        bullist numlist outdent indent | removeformat | help'
+                                                    plugins: ['advlist autolink lists link image charmap print preview anchor','searchreplace visualblocks code fullscreen', 'insertdatetime media table paste code help wordcount'],
+                                                    toolbar:'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help'
                                                     }}
                                                     onEditorChange={() => this.handleEditorChange}
                                                 />

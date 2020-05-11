@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { BrowserRouter, Switch, Route} from 'react-router-dom';
+import { BrowserRouter, Switch} from 'react-router-dom';
 
 import Header from './Components/Header';
 import SideNav from './Components/SideNav';
@@ -18,10 +18,6 @@ import {MyContext} from './Components/CustomProvider';
 import './Custom.css';
 
 class App extends Component {
-	constructor(props) {
-		super(props)
-		localStorage.getItem('darkMode') 
-	}
 	render(){
 		const darkModeStyle = {
 			backgroundColor: '#080808',
